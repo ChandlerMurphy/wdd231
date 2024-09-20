@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0 auto;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    /* max-width: 480px; */
+}
+
+/* Nav Items vvv */
+
+nav {
+    display: flex;
+    flex-direction: row;
+    background-color: #104D71;
+    width: 100%;
+    margin: 0;
+    justify-content: center;
+    padding: 10px;
+    padding-left: 0px;
+    color: white;
+}
+
+#nav-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#profile-pic {
+    max-width: 15%;
+    height: auto;
+}
+
+#nav-list {
+    display: none;
+    list-style: none;
+}
+
+.active {
+    color: rgb(223, 223, 55);
+}
+
+#hamburger {
+    border: none;
+    background: none;
+    font-size: xx-large;
+    color: white;
+}
+
+#hamburger::before {
+    content: "☰";
+}
+
+#hamburger.open::before {
+    content: "X";
+}
+
+/* Nav Items ^^^ */
+/* Main Items vvv */
+
+main {
+    display: inline;
+    flex-direction: row;
+}
+
+#top-card {
+    padding: 20px;
+}
+
+#top-card h2 {
+    text-align: center;
+    background-color: #104D71;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#top-card ul {
+    padding-top: 10px;
+}
+
+#middle-card {
+    padding: 20px;
+}
+
+#middle-card h2 {
+    text-align: center;
+    background-color: #104D71;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#middle-card-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+
+#middle-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+#middle-card p {
+    font-size: smaller;
+    padding-top: 10px;
+}
+
+#bottom-card {
+    padding: 20px;
+}
+
+#bottom-card h2 {
+    text-align: center;
+    background-color: #104D71;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* Main Items ^^^ */
+/* Footer Items vvv */
+
+footer {
+    text-align: center;
+    background-color: #104D71;
+    color: white;
+    padding: 10px;
+}
+
+#footer-flag {
+    display: flex;
+    flex-direction: row;
+    max-width: 50%;
+    height: auto;
+    justify-content: center;
+    padding: 10px;
+}
+
+#footer-flag p {
+    margin: 0;
+}
+
+#footer-flag img {
+    max-width: 2rem;
+    margin: 0;
+    padding-left: 10px;
+}
+
+#last-updated {
+    padding-top: 20px;
+    color: rgb(223, 223, 55);
+}

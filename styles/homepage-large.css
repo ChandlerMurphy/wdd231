@@ -1,0 +1,70 @@
+@media screen and (min-width: 480px) {
+
+    /* Header Item Changes vvv */
+    #hamburger {
+        display: none;
+    }
+
+    nav {
+        display: block;
+        padding-bottom: 0;
+    }
+
+    #profile-pic {
+        max-width: 100px;
+        height: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        box-shadow: 5px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    }
+
+    #nav-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        color: white;
+        justify-content: space-between;
+        background-color: black;
+        padding: 10px;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+
+    /* Header Item Changes ^^^ */
+    /* Main Itme Changes vvv */
+
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        /* justify-content: space-between; */
+        justify-content: center;
+    }
+
+    .main-card {
+        border-radius: 5px;
+        box-shadow: 5px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    }
+
+    #top-card {
+        padding: 0px;
+        margin: 20px;
+        width: 50%;
+    }
+
+    #middle-card {
+        padding: 0px;
+        margin: 20px;
+        width: 40%;
+    }
+    
+    #bottom-card {
+        padding: 0px;
+        margin: 20px;
+        width: 92.5%;
+    }
+
+}

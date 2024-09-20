@@ -3,24 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD130 Web Projects</title>
-
-    <!-- Two Methods to Normalizing your HTML including having a local file of your own or linking to an existing one online -->
-    <!-- <link rel="stylesheet" href="styles/normalize.css"> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    
+    <title>WDD 231 - Web Frontend Development 1 - Chandler Murphy</title>
+    <meta name="description" content="Chandler Murphy WDD 231 - Web Frontend Development 1 Homepage. This is the landing index page for my semesters website project work and week01 assingment.">
+    <meta name="author" content="Chandler Murphy">
+    <link href="styles/homepage.css" rel="stylesheet">
+    <link href="styles/homepage-large.css" rel="stylesheet">
+    <script src="scripts/homepage.js" defer></script>
 </head>
 <body>
-    <h1>Welcome to WDD130 Web Projects</h1>
-    <nav>
-        <a href="aboutme/index.html">About Me Page</a>             
-        <a href="wwr/index.html">White Water Rafting Website</a>
-        <a href="wwr/site-plan-rafting.html">White Water Rafting Siteplan</a>
-        <a href="positioning.html">Positioning Activity</a>
-        <a href="chandler_resume/index.html">Personal Website</a>
-        <a href="chandler_resume/site-plan.html">Personal Siteplan</a>
-    </nav> 
-    <p>Chandler Murphy - WDD130</p>
-    <p>Trying and Idea</p>
+    <header>
+        <nav>
+            <div id="nav-header">
+                <img id="profile-pic" src="images/chan_profile.jpeg" alt="Chandler Profile Image">
+                <h1>Chandler Murphy</h1>
+                <button id="hamburger" title="menu-button"></button>
+            </div>
+            <ul id="nav-list">
+                <li><a href="#" title="Home" class="active">Home</a></li>
+                <li><a href="#" title="Chamber">Chamber</a></li>
+                <li><a href="https://github.com/" title="GitHub Profile">GitHub Profile</a></li>
+                <li><a href="https://www.linkedin.com/in/chandler-murphy/" title="LinkedIn">LinkedIn</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="top-card" class="main-card">
+            <h2>Course Work</h2>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+        <section id="middle-card" class="main-card">
+            <h2>Utah, United States</h2>
+            <div id="middle-card-img">
+                <img src="images/pexels-cmonphotography-1809703.jpg" alt="Image of Trees">
+                <p>Pine Trees</p>
+            </div>
+        </section>
+        <section id="bottom-card" class="main-card">
+            <h2>Web and Computer Programming Certificate</h2>
+        </section>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span></p>
+        <p>Chandler Murphy</p>
+        <section id="footer-flag">
+            <p>United States</p>
+            <img src="images/usa_flag.jpeg" alt="USA Flag">
+        </section>
+        <p id="last-updated">Last Updated: <span id="lasModified"></span></p>
+    </footer>
 </body>
 </html>
