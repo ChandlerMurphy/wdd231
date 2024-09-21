@@ -28,6 +28,7 @@ nav {
 #profile-pic {
     max-width: 60px;
     height: auto;
+    margin-right: 10px;
 }
 
 nav ul {
