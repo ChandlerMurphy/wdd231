@@ -46,8 +46,19 @@ nav ul li {
     padding: 5px;
 }
 
+nav ul li:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.1em;
+    cursor: pointer;
+}
+
 .active {
     color: yellow;
+}
+
+.active:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.1em;
 }
 
 a {
