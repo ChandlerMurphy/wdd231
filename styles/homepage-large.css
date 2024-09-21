@@ -18,7 +18,7 @@
         box-shadow: 5px 10px 5px 0px rgba(0, 0, 0, 0.75);
     }
 
-    #nav-list {
+    nav ul {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -28,12 +28,7 @@
         background-color: black;
         padding: 10px;
     }
-
-    a {
-        color: white;
-        text-decoration: none;
-    }
-
+    
     /* Header Item Changes ^^^ */
     /* Main Itme Changes vvv */
 
@@ -46,8 +41,8 @@
 
     .main-card {
         border-radius: 5px;
-        box-shadow: 5px 10px 5px 0px rgba(0, 0, 0, 0.75);
-    }
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+        }
 
     #top-card {
         padding: 0px;
