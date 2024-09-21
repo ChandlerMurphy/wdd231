@@ -120,4 +120,27 @@ function createCourseCard(courseList) {
     });
 }
 
+const allFilter = document.querySelector("#all-button");
+allFilter.addEventListener("click", () => {
+    createCourseCard(courses);
+});
+
+const cseFilter = document.querySelector("#cse-button");
+cseFilter.addEventListener("click", () => {
+    createCourseCard(courses.filter(course => course.subject === "CSE"));
+});
+
+const wddFilter = document.querySelector("#wdd-button");
+wddFilter.addEventListener("click", () => {
+    createCourseCard(courses.filter(course => course.subject === "WDD"));
+});
+
+
 createCourseCard(courses);
+
+// Required Credits Function
+const totalCredits = courses.reduce((accumulator, course) => {
+    return accumulator + course.credits;
+}, 0);
+
+document.querySelector("#required-credits").innerHTML = `<section>Total Required Credits: ${totalCredits}`;

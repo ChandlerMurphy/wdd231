@@ -47,7 +47,7 @@ nav ul li {
 }
 
 .active {
-    color: rgb(223, 223, 55);
+    color: yellow;
 }
 
 a {
@@ -62,6 +62,10 @@ a {
     background: none;
     font-size: xx-large;
     color: white;
+}
+
+#hamburger:hover {
+    cursor: pointer;
 }
 
 #hamburger::before {
@@ -157,7 +161,11 @@ main {
 
 #card-filters a {
     color: white;
-    padding: 10px 20px;
+    padding: 10px 30px;
+}
+
+#all-button:hover, #cse-button:hover, #wdd-button:hover {
+    cursor: pointer;
 }
 
 #course-cards {
@@ -176,7 +184,24 @@ main {
 }
 
 .incomplete {
-    background-color: yellow;
+    background-color: lightcoral;
+}
+
+#required-credits {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top: solid gray 2px;
+}
+
+#required-credits section {
+    background-color: black;
+    color: white;
+    margin: 10px auto;
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
+    padding: 5px;
 }
 
 /* Main Items ^^^ */
@@ -212,5 +237,5 @@ footer * {
 
 .last-updated {
     padding-top: 20px;
-    color: rgb(223, 223, 55);
+    color: yellow;
 }
