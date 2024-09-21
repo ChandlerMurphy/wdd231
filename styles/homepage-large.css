@@ -28,9 +28,9 @@
         background-color: black;
         padding: 10px;
     }
-    
-    /* Header Item Changes ^^^ */
-    /* Main Itme Changes vvv */
+
+    /* Header ^^^ */
+    /* Main vvv */
 
     main {
         display: flex;
@@ -62,4 +62,14 @@
         width: 92.5%;
     }
 
+    #course-cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .course-card {
+        width: 200px;
+        flex: 0 1 auto;
+    }
 }

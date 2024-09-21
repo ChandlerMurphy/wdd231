@@ -137,6 +137,48 @@ main {
     border-radius: 5px;
 }
 
+#card-filters {
+    display: flex;
+    flex-direction: row;
+    max-width: 400px;
+    padding: 0px;
+    justify-content: space-between;
+}
+
+#card-filters li {
+    list-style: none;
+    background-color: black;
+    margin: 10px;
+    border-radius: 5px;
+    width: 100px;
+    text-align: center;
+    padding: 5px;
+}
+
+#card-filters a {
+    color: white;
+    padding: 10px 20px;
+}
+
+#course-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top: solid gray 2px;
+}
+
+.course-card {
+    margin: 10px;
+    background-color: lightblue;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+}
+
+.incomplete {
+    background-color: yellow;
+}
+
 /* Main Items ^^^ */
 /* Footer Items vvv */
 
