@@ -1,0 +1,39 @@
+h1 {
+    color: #A27E8E;
+    text-align: center;
+}
+
+#cards {
+    background-color: lightgray;
+    padding: 5px;
+    border: solid 2px black;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.prophet-cards {
+    text-align: center;
+    background-color: #A27E8E;
+    padding: 10px;
+    border: solid 3px black;
+    margin: 5px;
+}
+
+.prophet-cards h2 {
+    color: blue;
+}
+
+.prophet-cards p {
+    color: darkblue;
+}
+
+footer {
+    text-align: center;
+    margin: 10px;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    color: blue;
+}
