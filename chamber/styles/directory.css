@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+/* Header vvv */
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #b8e5ff;
+    color: #272020;
+}
+
+#nav-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-content: center;
+    /* padding: 10px; */
+}
+
+#nav-left {
+    display: flex;
+    padding: 10px;
+}
+
+#city-img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+#hamburger {
+    border: none;
+    background: none;
+    font-size: xx-large;
+    padding: 10px;
+}
+
+#hamburger:hover {
+    cursor: pointer;
+}
+
+#hamburger::before {
+    content: "☰";
+}
+
+#hamburger.open-ham::before {
+    content: "X";
+}
+
+ul {
+    display: none;
+    list-style: none;
+}
+
+ul a {
+    color: black;
+    text-decoration: none;
+}
+
+.open-nav {
+    padding: 0px;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.open-nav li {
+    display: block;
+}
+
+.open-nav a {
+    display: block;
+    padding: 15px;
+    border-bottom: 2px solid black;
+}
+
+.open-nav > :first-child {
+    border-top: 2px solid black;
+}
+
+/* Main vvv */
+
+
+/* Footer vvv */
+footer {
+    background-color: #b8e5ff;;
+}
+

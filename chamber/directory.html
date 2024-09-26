@@ -12,6 +12,9 @@
     <meta property="og:image" content="https://churchofjesuschristtemples.org/assets/img/temples/ephraim-utah-temple/ephraim-utah-temple-25337-main.jpg" />
     <meta property="og:description" content="This is the directory page for my Chamber of Commerce page. It holds all the business information for businesses included in the town's Chamber of Commerce." />
     <link href="/styles/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link href="styles/directory.css" rel="stylesheet">
     <link href="styles/directory-large.css" rel="stylesheet">
     <script src="scripts/directory.js" defer></script>
@@ -21,13 +24,17 @@
     <header>
         <nav>
             <div id="nav-header">
-                <img id="city-img" src="images/ephraim-city.jpg" alt="Ephraim City Image">
-                <h1>Ephraim City</h1>
-                <h2>City of Commerce</h2>
+                <div id="nav-left">
+                    <img id="city-img" src="images/ehpraim-city.jpg" alt="Ephraim City Image">
+                    <div id="nav-header-text">
+                        <h1>Ephraim City</h1>
+                        <p>Chamber of Commerce</p>
+                    </div>
+                </div>
                 <button id="hamburger" title="menu-button"></button>
             </div>
             <ul>
-                <li><a href="#" title="Home">Home</a></li>
+                <li><a href="#" title="Home" id="home-nav-link">Home</a></li>
                 <li><a href="/chamber/directory.html" title="Directory" class="active">Directory</a></li>
                 <li><a href="#" title="Join">Join</a></li>
                 <li><a href="#" title="Discover">Discover</a></li>
