@@ -1,0 +1,23 @@
+{
+    "familyName" : "LuckyDrop",
+    "moveInDate" : "12/3/2024",
+    "membersInFamily" : 3,
+    "visitByBishopric" : true,
+    "familyMembers" : [
+        {
+            "name" : "Krolmnite",
+            "gender" : "male",
+            "birthdate" : "2/5/2015"
+        },
+        {
+            "name" : "Sherry",
+            "gender" : "female",
+            "birthdate" : "2/6/2002"
+        },
+        {
+            "name" : "Baxton",
+            "gender" : "male",
+            "birthdate" : "4/5/2000"
+        }
+    ]
+}
