@@ -8,8 +8,8 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #b8e5ff;
-    color: #272020;
+    background-color: #d6d6ff;
+    color: black;
 }
 
 #nav-header {
@@ -17,7 +17,6 @@ nav {
     justify-content: space-between;
     width: 100%;
     align-content: center;
-    /* padding: 10px; */
 }
 
 #nav-left {
@@ -81,11 +80,45 @@ ul a {
     border-top: 2px solid black;
 }
 
-/* Main vvv */
+.active {
+    color: #790279;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
 
+/* Main vvv */
+#view-buttons {
+    text-align: center;
+    padding: 10px;
+}
+
+.view-buttons img {
+    display: block;
+}
+
+.view-buttons {
+    cursor: pointer;
+    margin: 5px;
+}
 
 /* Footer vvv */
 footer {
-    background-color: #b8e5ff;;
+    background-color: #d6d6ff;
+    padding: 10px;
+}
+
+#social-footer {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+#social-footer a img {
+    width: 60px;
+    height: 60px;
+}
+
+#social-footer a {
+    display: block
 }
 

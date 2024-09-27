@@ -1,0 +1,29 @@
+@media screen and (min-width: 860px) {
+    /* Header vvv */
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        width: 50%;
+    }
+
+    #hamburger {
+        display: none;
+    }
+
+    /* Main vvv */
+
+    /* Footer vvv */
+    footer {
+        display: flex;
+        justify-content: space-between;
+    }
+}
