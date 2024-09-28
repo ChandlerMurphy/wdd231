@@ -50,12 +50,7 @@ function displayBusinesses(businesses) {
         website.setAttribute("href", business.websiteUrl)
         membership.textContent = `Mem Lvl: ${business.membership}`;
 
-        card.appendChild(logo);
-        card.appendChild(name);
-        card.appendChild(address);
-        card.appendChild(phone);
-        card.appendChild(website);
-        card.appendChild(membership);
+        [logo, name, address, phone, website, membership].forEach(child => card.appendChild(child));
         card.setAttribute("class", "business-cards grid");
 
         cards.appendChild(card);
