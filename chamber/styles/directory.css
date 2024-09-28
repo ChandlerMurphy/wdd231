@@ -52,6 +52,12 @@ nav {
 ul {
     display: none;
     list-style: none;
+
+    /* padding: 0;
+    margin: 0;
+    max-height: 0;            
+    transition: max-height 0.5s ease, opacity 0.5s ease; 
+    overflow: hidden;   */
 }
 
 ul a {
@@ -64,6 +70,11 @@ ul a {
     display: block;
     width: 100%;
     text-align: center;
+
+    /* max-height: 500px;
+    opacity: 1;  
+    transition: max-height 0.5s ease, opacity 0.5s ease; */
+
 }
 
 .open-nav li {
