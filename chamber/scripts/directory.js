@@ -41,8 +41,8 @@ function displayBusinesses(businesses) {
         logo.setAttribute("src", business.iconUrl);
         logo.setAttribute("alt", `Logo of ${business.name}`);
         logo.setAttribute("loading", "lazy");
-        logo.setAttribute("width", "200");
-        logo.setAttribute("height", "auto");
+        logo.setAttribute("width", business.iconWidth);
+        logo.setAttribute("height", business.iconHeight);
         name.textContent = business.name;
         address.textContent = business.address;
         phone.textContent = business.phone;

@@ -4,57 +4,71 @@
         "name": "Snow College",
         "address": "150 College Ave Ephraim, Utah 84627",
         "phone": "(435) 283-7000",
-        "iconUrl": "https://www.snow.edu/offices/creative/brand/downloads/logos/SNOWlogoBLU/SNOWstackedBLU/SNOWstackedBLULogo.png",
+        "iconUrl": "images/snow-icon.png",
         "websiteUrl": "https://www.snow.edu/",
-        "membership": 1
+        "membership": 1,
+        "iconWidth": "200",
+        "iconHeight": "55"
       },
       {
         "name": "Za's & Da's Pizza",
         "address": "726 North 50 East Ephraim, UT 84627",
         "phone": "(435) 283-1111",
-        "iconUrl": "https://c19d150f736afd7f3653.cdn6.editmysite.com/uploads/b/c19d150f736afd7f3653a77aa7ea3ae1a09471212c7fa97dfc8e0c83710757b5/1694648481998-85bfe61b-9570-45ea-8a59-f1eb2f486012_1_1694648565.jpg?width=2400&optimize=medium",
+        "iconUrl": "images/zas-das-icon.png",
         "websiteUrl": "https://zas-das.square.site/#most-popular",
-        "membership": 2
+        "membership": 2,
+        "iconWidth": "200",
+        "iconHeight": "178"
       },
       {
         "name": "Ephraim City",
         "address": "5 South Main Street Ephraim, UT 84627",
         "phone": "(435) 283-4631",
-        "iconUrl": "https://ephraimcity.org/ImageRepository/Document?documentID=641",
+        "iconUrl": "images/ephraim-icon.png",
         "websiteUrl": "https://ephraimcity.org/",
-        "membership": 3
+        "membership": 3,
+        "iconWidth": "200",
+        "iconHeight": "81"
       },
       {
         "name": "Mountain America Credit Union",
         "address": "620 North Main Ephraim, UT 84627",
         "phone": "(435) 201-9528",
-        "iconUrl": "https://www.investopedia.com/thmb/1aSozeGOKhKT68vcOA7sNxri3zI=/fit-in/1500x750/filters:format(png):fill(white):max_bytes(150000):strip_icc()/Mountain-America-Credit-Union-logo-a4acd1effce04b6f9223952a050274a4.jpg",
+        "iconUrl": "images/macu-logo.png",
         "websiteUrl": "https://www.macu.com/branch-locations/utah/sanpete-county/ephraim-branch",
-        "membership": 1
+        "membership": 1,
+        "iconWidth": "200",
+        "iconHeight": "100"
       },
       {
         "name": "Sanpete Valley Realty",
         "address": "415 S Main Ephraim, UT 84627",
         "phone": "(435) 851-0471",
-        "iconUrl": "https://www.sanpetevalleyrealty.com/images/RSbroker.gif",
+        "iconUrl": "images/realty-icon.png",
         "websiteUrl": "https://www.sanpetevalleyrealty.com/",
-        "membership": 2
+        "membership": 2,
+        "iconWidth": "200",
+        "iconHeight": "200"
       },
       {
         "name": "T-Mobile",
         "address": "460 North Main Street Ephraim, UT 84627",
         "phone": "(4350 244-1368",
-        "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/T-Mobile_logo_2022.svg/2048px-T-Mobile_logo_2022.svg.png",
+        "iconUrl": "images/tmobile-icon.png",
         "websiteUrl": "https://www.t-mobile.com/stores/bd/t-mobile-ephraim-ut-84627-503f/",
-        "membership": 3
+        "membership": 3,
+        "iconWidth": "200",
+        "iconHeight": "200"
       },
       {
         "name": "Thistle + Honey",
         "address": "255 North Main Ephraim, UT 84627",
         "phone": "(435) 314-6418",
-        "iconUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBOIKb_8cUuN75VqWHfMYytYyDqdstYKzOiw&s",
+        "iconUrl": "images/thistle-icon.png",
         "websiteUrl": "https://www.thistle-honey.com/",
-        "membership": 1
+        "membership": 1,
+        "iconWidth": "200",
+        "iconHeight": "199"
       }
     ]
 }
