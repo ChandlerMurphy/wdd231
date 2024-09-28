@@ -101,6 +101,75 @@ ul a {
     margin: 5px;
 }
 
+/* Grid View on Directory Menu vvv */
+.grid-menu {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+	grid-gap: 10px;
+	align-items: center;
+    width: 95%;
+    margin: 20px auto;
+    justify-content: center;
+}
+
+.grid {
+    background-color: #bed;
+    box-shadow: 2px 5px 15px 0px rgba(0,0,0,0.75);
+    border-radius: 4px;
+    text-align: center;
+    width: 280px;
+    height: 360px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid h2 {
+    padding: 10px 0 10px 0;
+}
+
+.grid p, a {
+    padding: 3px;
+}
+
+.grid a {
+    color: #790279;
+    text-decoration: none;
+}
+
+/* List View on Directory Menu vvv */
+.list-menu {
+    display: flex;
+	flex-direction: column;
+    margin: 20px auto;
+}
+
+.list {
+	display: grid;
+	grid-template-columns: 2fr 2fr 1fr 1fr 1fr;
+	padding: 10px;
+}
+
+.list img {
+	display: none;
+}
+
+.list:nth-child(even) {
+	background-color: #bed;
+}
+
+.list > * {
+    padding: 5px;
+}
+
+.list a {
+    color: #790279;
+    text-decoration: none;
+}
+
+
 /* Footer vvv */
 footer {
     background-color: #d6d6ff;
