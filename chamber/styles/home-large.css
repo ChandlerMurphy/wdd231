@@ -1,0 +1,54 @@
+@media screen and (min-width: 860px) {
+    /* Header vvv */
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        width: 50%;
+    }
+
+    .open-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 50%;
+    }
+
+    .open-nav li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .open-nav a {
+        display: block;
+        padding: 15px;
+        border-bottom: none;
+    }
+    
+    .open-nav > :first-child {
+        border-top: none;
+    }
+
+    #hamburger {
+        display: none;
+    }
+
+    /* Main vvv */
+
+    /* Footer vvv */
+    footer {
+        display: flex;
+        justify-content: space-between;
+    }
+}
