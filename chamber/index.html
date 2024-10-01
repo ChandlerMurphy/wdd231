@@ -31,8 +31,8 @@
                 <button id="hamburger" title="menu-button"></button>
             </div>
             <ul>
-                <li><a href="#" title="Home" id="home-nav-link">Home</a></li>
-                <li><a href="/chamber/directory.html" title="Directory" class="active">Directory</a></li>
+                <li><a href="#" title="Home" id="home-nav-link"  class="active">Home</a></li>
+                <li><a href="/chamber/directory.html" title="Directory">Directory</a></li>
                 <li><a href="#" title="Join">Join</a></li>
                 <li><a href="#" title="Discover">Discover</a></li>
             </ul>
@@ -40,25 +40,30 @@
     </header>
     <main>
         <div id="hero">
-            <img src="" alt="Hero Image">
+            <img src="images/ephraim-hero-large.jpg" alt="Hero Image">
             <a href="#" id="join-button">Join the Chamber of Commerce!</a>
         </div>
+        <h2 id="home-title">Home</h2>
         <div id="home-section">
-            <h1>Home</h1>
-            <section id="events">
+            <div id="events">
                 <h2 class="home-titles">Events</h2>
-                <div id="events-card"></div>
-            </section>
-            <section id="weather">
+                <ol id="events-list">
+                    <li>Middle School Soccer Game Sept 30th @4pm</li>
+                    <li>County Bake-Off Oct 1st @5pm</li>
+                    <li>High School Raffle Sale Oct 2nd @10am</li>
+                    <li>County Rodeo Oct 5th @8pm</li>
+                </ol>
+            </div>
+            <div id="weather">
                 <h2 class="home-titles">Current Weather</h2>
                 <div id="weather-card"></div>
-            </section>
-            <section id="forecast">
+            </div>
+            <div id="forecast">
                 <h2 class="home-titles">Weather Forecast</h2>
                 <div></div>
                 <div></div>
                 <div></div>
-            </section>
+            </div>
         </div>
         <div id="business-cards">
             <div class="business-cards" id="business-card1"></div>

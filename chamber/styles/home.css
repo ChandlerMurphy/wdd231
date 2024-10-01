@@ -99,8 +99,83 @@ ul a {
 }
 
 /* Main vvv */
-main {
-    margin: 20px;
+#hero {
+    position: relative;
+    display: inline;
+}
+
+#hero img {
+    width: 100%;
+    height: auto;
+}
+
+#join-button {
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #bed;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+#home-title {
+    margin: 16px;
+}
+
+#home-section {
+    margin: 15px;
+}
+
+.home-titles {
+    text-align: center;
+    background-color: #cfcece;
+    padding: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#events {
+    background-color: #bed;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#events-list {
+    display: block;
+    padding: 15px;
+    list-style: none;
+    text-align: center;
+}
+
+#events-list li {
+    padding: 5px;
+}
+
+#weather {
+    background-color: #bed;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* This needs to be fixed because currently it is just a place holder for us to see the backgroud effects of the "Current Weather" Section */
+#weather-card {
+    padding: 50px;
+}
+
+#forecast {
+    background-color: #bed;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* This needs to be fixed because currently it is just a place holder for us to see the backgroud effects of the "Weather Forecast" Section */
+#forecast div {
+    padding: 10px;
 }
 
 /* Footer vvv */
