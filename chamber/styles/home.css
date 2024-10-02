@@ -146,7 +146,11 @@ ul a {
 }
 
 #events-list {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 70%;
+
     padding: 15px;
     list-style: none;
     text-align: center;
@@ -162,9 +166,23 @@ ul a {
     margin-bottom: 20px;
 }
 
-/* This needs to be fixed because currently it is just a place holder for us to see the backgroud effects of the "Current Weather" Section */
 #weather-card {
-    padding: 50px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+#card-img {
+    width: 100px;
+    height: 100px;
+}
+
+#card-text {
+    padding: 5px;
+}
+
+#card-text p {
+    padding: 3px;
 }
 
 #forecast {
@@ -176,6 +194,8 @@ ul a {
 /* This needs to be fixed because currently it is just a place holder for us to see the backgroud effects of the "Weather Forecast" Section */
 #forecast div {
     padding: 10px;
+    display: flex;
+    flex-direction: row;
 }
 
 /* Footer vvv */
