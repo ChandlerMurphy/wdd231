@@ -79,5 +79,5 @@ weatherapiFetch();
 
 // Weather Forecast Card
     // Variables for the Latitude and Longitude were created previously and do not need to be made again
-const forecasturl = `api.openweathermap.org/data/2.5/forecast/daily?lat=${myLat}&lon=${myLong}&cnt={cnt}&appid={API key}`;
+const forecasturl = `api.openweathermap.org/data/2.5/forecast/daily?lat=${myLat}&lon=${myLong}&cnt={3}&appid=${myKey}`;
 
