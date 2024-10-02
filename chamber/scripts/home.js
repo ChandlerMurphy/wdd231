@@ -31,12 +31,12 @@ const myLat = "39.36";
 const myLong = "-111.59";
 const url = `https://api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLong}&appid=${myKey}&units=imperial`;
 
-async function apiFetch() {
+async function weatherapiFetch() {
     try {
         const response = await fetch(url);
         if (response.ok) {
             const data = await response.json();
-            console.log(data);
+            // console.log(data);
             displayWeatherCard(data);
         } else {
             throw Error(await response.text());
@@ -75,4 +75,9 @@ function displayWeatherCard(data) {
     cardSunset.textContent = `Sunset: ${sunsetTime}`;
 }
 
-apiFetch();
+weatherapiFetch();
+
+// Weather Forecast Card
+    // Variables for the Latitude and Longitude were created previously and do not need to be made again
+const forecasturl = `api.openweathermap.org/data/2.5/forecast/daily?lat=${myLat}&lon=${myLong}&cnt={cnt}&appid={API key}`;
+
