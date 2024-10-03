@@ -79,5 +79,65 @@ weatherapiFetch();
 
 // Weather Forecast Card
     // Variables for the Latitude and Longitude were created previously and do not need to be made again
-const forecasturl = `api.openweathermap.org/data/2.5/forecast/daily?lat=${myLat}&lon=${myLong}&cnt={3}&appid=${myKey}`;
+const forecasturl = `https://api.openweathermap.org/data/2.5/forecast?lat=${myLat}&lon=${myLong}&appid=${myKey}&units=imperial`;
 
+async function forecastapiFetch() {
+    try {
+        const response = await fetch(forecasturl);
+        if (response.ok) {
+            const data = await response.json();
+            console.log(data);
+            displayForecastCard(data.list);
+        } else {
+            throw Error(await response.text());
+        }
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+function displayForecastCard(data) {
+    // Create variables with dats for the Forecasted Days
+    const today = new Date();
+    const tomorrow = new Date();
+    tomorrow.setDate(today.getDate() + 1);
+    const dayAfter = new Date();
+    dayAfter.setDate(today.getDate() + 2);
+
+    // Store a list of the next three days that are different in our Forecast 
+    const dailyForecasts = [];
+
+    data.forEach(day => {
+        const forecastDate = new Date(day.dt * 1000);
+
+        if (
+            forecastDate.getFullYear() === today.getFullYear() &&
+            forecastDate.getMonth() === today.getMonth() &&
+            forecastDate.getDate() === today.getDate() &&
+            !dailyForecasts.includes("today")
+        ) {
+            dailyForecasts[0] = day;
+        } else if (
+            forecastDate.getFullYear() === tomorrow.getFullYear() &&
+            forecastDate.getMonth() === tomorrow.getMonth() &&
+            forecastDate.getDate() === tomorrow.getDate() &&
+            !dailyForecasts.includes("tomorrow")
+        ) {
+            dailyForecasts[1] = day;
+        } else if (
+            forecastDate.getFullYear() === dayAfter.getFullYear() &&
+            forecastDate.getMonth() === dayAfter.getMonth() &&
+            forecastDate.getDate() === dayAfter.getDate() &&
+            !dailyForecasts.includes("dayAfter")
+        ) {
+            dailyForecasts[2] = day;
+        }
+    })
+
+    // With different days in the dailyForcasts[] array we can properly call the temp data for new days to display
+    document.querySelector("#forecastOne").innerHTML = `Today: <b>${dailyForecasts[0].main.temp}&deg;F</b>`;
+    document.querySelector("#forecastTwo").innerHTML = `Tommorrow: <b>${dailyForecasts[1].main.temp}&deg;F</b>`;
+    document.querySelector("#forecastThree").innerHTML = `Day After: <b>${dailyForecasts[2].main.temp}&deg;F</b>`;
+}
+
+forecastapiFetch();

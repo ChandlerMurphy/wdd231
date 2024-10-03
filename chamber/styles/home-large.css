@@ -69,6 +69,10 @@
         margin: 15px 0px;
     }
 
+    #forecast-text {
+        padding-top: 60px;
+    }
+
     /* Footer vvv */
     footer {
         display: flex;
