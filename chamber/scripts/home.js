@@ -50,6 +50,8 @@ function displayWeatherCard(data) {
     const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
     cardImg.setAttribute("src", iconsrc);
     cardImg.setAttribute("alt", data.weather[0].description);
+    cardImg.setAttribute("width", "100");
+    cardImg.setAttribute("height", "100");
     cardTemp.innerHTML = `<b>${data.main.temp}&deg;</b> F`;
     cardCloud.innerHTML = `${data.weather[0].description}`;
     cardHigh.innerHTML = `High: ${data.main.temp_max}&deg;`;
@@ -187,7 +189,7 @@ function displayBusinesses(businesses) {
         logo.setAttribute("src", business.iconUrl);
         logo.setAttribute("alt", `Logo of ${business.name}`);
         logo.setAttribute("loading", "lazy");
-        logo.setAttribute("width", "100");
+        logo.setAttribute("width", "150");
         logo.setAttribute("height", "auto");
         name.textContent = business.name;
         phone.textContent = `Phone: ${business.phone}`;
