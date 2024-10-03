@@ -86,7 +86,7 @@ async function forecastapiFetch() {
         const response = await fetch(forecasturl);
         if (response.ok) {
             const data = await response.json();
-            console.log(data);
+            // console.log(data);
             displayForecastCard(data.list);
         } else {
             throw Error(await response.text());
@@ -141,3 +141,71 @@ function displayForecastCard(data) {
 }
 
 forecastapiFetch();
+
+// Get Business Data and Display 2-3 random cards on the webpage
+const json = "data/members.json";
+const cards = document.querySelector('#business-cards');
+
+async function getBusinessData() {
+    const response = await fetch(json);
+    const data = await response.json()
+
+    const newData = data.businesses
+    const premiumBusinesses = [];
+    newData.forEach(business => {
+        if (business.membership !== 3) {
+            premiumBusinesses.push(business);
+        }
+    });
+
+    function getRandomNumbers(arrayLength, count) {
+        const numbers = new Set();
+        while (numbers.size < count) {
+            const randomIndex = Math.floor(Math.random() * arrayLength);
+            numbers.add(randomIndex);
+        }
+        return Array.from(numbers);
+    }
+
+    const randomNumbers = getRandomNumbers(premiumBusinesses.length, 3);
+    const randomBusinesses = randomNumbers.map(index => premiumBusinesses[index]);
+
+    displayBusinesses(randomBusinesses);
+}
+
+function displayBusinesses(businesses) {
+    businesses.forEach((business) => {
+        const card = document.createElement("section");
+        const name = document.createElement("h2");
+        const cardContext = document.createElement("div");
+        const logo = document.createElement("img");
+        const cardText = document.createElement("div");
+        const phone = document.createElement("p");
+        const website = document.createElement("a");
+        const membership = document.createElement("p");
+
+        logo.setAttribute("src", business.iconUrl);
+        logo.setAttribute("alt", `Logo of ${business.name}`);
+        logo.setAttribute("loading", "lazy");
+        logo.setAttribute("width", "100");
+        logo.setAttribute("height", "auto");
+        name.textContent = business.name;
+        phone.textContent = business.phone;
+        website.textContent = `Website Link`;
+        website.setAttribute("href", business.websiteUrl)
+        membership.textContent = `Mem Lvl: ${business.membership}`;
+
+        cardContext.appendChild(logo);
+        cardText.appendChild(phone);
+        cardText.appendChild(website);
+        cardText.appendChild(membership);
+        cardContext.appendChild(cardText);
+
+        [name, cardContext].forEach(child => card.appendChild(child));
+        card.setAttribute("class", "business-card");
+
+        cards.appendChild(card);
+    });
+};
+
+getBusinessData();
