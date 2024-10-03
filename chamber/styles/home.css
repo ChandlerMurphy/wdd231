@@ -200,6 +200,45 @@ ul a {
     padding: 20px;
 }
 
+#business-cards {
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.business-card {
+    background-color: #d6d6ff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.business-card h2 {
+    text-align: center;
+    border-bottom: 3px solid darkgray;
+    padding: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-context {
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.card-context img {
+    padding: 0 5px;
+}
+
+.card-text {
+    padding: 0 15px;
+}
+
+.card-text a {
+    color: #790279;
+}
+
 /* Footer vvv */
 footer {
     background-color: #d6d6ff;

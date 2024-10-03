@@ -190,7 +190,7 @@ function displayBusinesses(businesses) {
         logo.setAttribute("width", "100");
         logo.setAttribute("height", "auto");
         name.textContent = business.name;
-        phone.textContent = business.phone;
+        phone.textContent = `Phone: ${business.phone}`;
         website.textContent = `Website Link`;
         website.setAttribute("href", business.websiteUrl)
         membership.textContent = `Mem Lvl: ${business.membership}`;
@@ -200,6 +200,8 @@ function displayBusinesses(businesses) {
         cardText.appendChild(website);
         cardText.appendChild(membership);
         cardContext.appendChild(cardText);
+        cardContext.setAttribute("class", "card-context");
+        cardText.setAttribute("class", "card-text");
 
         [name, cardContext].forEach(child => card.appendChild(child));
         card.setAttribute("class", "business-card");

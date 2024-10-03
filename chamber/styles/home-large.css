@@ -73,6 +73,14 @@
         padding-top: 60px;
     }
 
+    #business-cards {
+        margin: 15px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+        text-align: center;
+    }
+
     /* Footer vvv */
     footer {
         display: flex;
