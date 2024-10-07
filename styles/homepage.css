@@ -7,6 +7,40 @@
 
 /* Nav Items vvv */
 
+h1 {
+    animation-duration: 2s;
+    animation-name: slidein;
+}
+
+h2 {
+    animation-duration: 2s;
+    animation-name: h2-slidein;
+}
+
+@keyframes h2-slidein {
+    from {
+        translate: 150vw 0;
+        scale: 200% 1;
+    }
+
+    to {
+        translate: 0 0;
+        scale: 100% 1;
+    }
+}
+
+@keyframes slidein {
+    from {
+        translate: 150vw 0;
+        scale: 200% 1;
+    }
+
+    to {
+        translate: 0 0;
+        scale: 100% 1;
+    }
+}
+
 nav {
     display: flex;
     flex-direction: column;
