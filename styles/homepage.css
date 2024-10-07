@@ -91,6 +91,32 @@ a {
 /* Nav Items ^^^ */
 /* Main Items vvv */
 
+dialog {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: .25rem;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 3rem #777;
+    width: 90%;
+    max-width: 600px;
+}
+
+::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+dialog button {
+    position: absolute;
+    top: 20px;
+    right: 23px;
+    padding: 7px 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+dialog button:hover {
+    cursor: pointer;
+}
+
 main {
     display: inline;
     flex-direction: row;
@@ -193,6 +219,10 @@ main {
     border-radius: 5px;
     text-align: center;
     padding: 10px;
+}
+
+.course-card:hover {
+    cursor: pointer;
 }
 
 .incomplete {

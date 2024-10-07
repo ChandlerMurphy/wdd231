@@ -98,6 +98,28 @@ const courses = [
 ]
 
 // Creating Course Cards to display
+const courseDetails = document.querySelector("#course-details");
+
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = "";
+    courseDetails.innerHTML = `
+    <button id="closeModal">X</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits</strong>: ${course.credits}</p> 
+    <p><strong>Certificate</strong>: ${course.certificate}</p> 
+    <p>${course.description}</p> 
+    <p><strong>Technologies</strong>: ${course.technology.join(", ")}</p> 
+    `;
+    courseDetails.showModal();
+
+    closeModal.addEventListener("click", () => {
+        courseDetails.close();
+    });
+}
+
+
+
 function createCourseCard(courseList) {
     document.querySelector("#course-cards").innerHTML = "";
     courseList.forEach(course => {
@@ -109,12 +131,14 @@ function createCourseCard(courseList) {
         let className = "course-card";
         if (!course.completed) {
             className += " incomplete";
-            // card.setAttribute("class", "incomplete")
         } 
 
-        // card.setAttribute("class", "course-card");
         card.setAttribute("class", className)
         card.appendChild(courseName);
+
+        card.addEventListener("click", () => {
+            displayCourseDetails(course);
+        })
 
         document.querySelector("#course-cards").appendChild(card);
     });
