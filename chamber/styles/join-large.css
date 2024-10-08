@@ -1,0 +1,89 @@
+@media screen and (min-width: 860px) {
+    /* Header vvv */
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        width: 50%;
+    }
+
+    .open-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 50%;
+    }
+
+    .open-nav li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .open-nav a {
+        display: block;
+        padding: 15px;
+        border-bottom: none;
+    }
+    
+    .open-nav > :first-child {
+        border-top: none;
+    }
+
+    #hamburger {
+        display: none;
+    }
+
+    /* Main vvv */
+
+    main {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    #join-button:hover {
+        transform: scale(1.1);
+    }
+
+    #home-section {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-gap: 10px;
+    }
+
+    #home-title {
+        margin: 16px 0px;
+    }
+    
+    #home-section {
+        margin: 15px 0px;
+    }
+
+    #forecast-text {
+        padding-top: 60px;
+    }
+
+    #business-cards {
+        margin: 15px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+        text-align: center;
+    }
+
+    /* Footer vvv */
+    footer {
+        display: flex;
+        justify-content: space-between;
+    }
+}
