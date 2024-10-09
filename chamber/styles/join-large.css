@@ -46,6 +46,16 @@
 
     /* Main vvv */
 
+    main {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #membership-div {
+        margin: 0px;
+    }
+
     /* Footer vvv */
     footer {
         display: flex;

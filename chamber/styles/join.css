@@ -92,45 +92,45 @@ ul a {
 
 /* Main vvv */
 
-*{box-sizing: border-box;}
-html {
-  -webkit-text-size-adjust: 100%; 
-  -ms-text-size-adjust: 100%;
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-h1 {
-  color: #3D405B;
+* {
+    box-sizing: border-box;
+}
+
+#membership-form h2 {
+    margin: 20px;
+    text-align: left;
 }
 
 form {
-    margin: 1rem 2%;
+    margin: 20px;
   
     label {
       display: block;
-      font-size: .8rem;
-      color: purple;
-      padding-top: .2rem;
+      color: #790279;
     }
+
     h3 {
-      font-size: .9rem;
-      color: #E07A5F;
-      margin: 1.5rem 0 .2rem 0;
-      border-bottom: 1px solid #eee;
+      color: #790279;
+      margin: 25px 0 5px 0;
     }
   
     input[type=text],
     input[type=tel],
     input[type=date],
-    input[type=email],
-    select {
+    input[type=email] {
       display: block;
-      margin: .1rem 0 1rem 0 ;
-      padding: .3rem;
+      margin: 2px 0 16px 0 ;
+      padding: 12px;
       border: 1px solid #999;
       border-radius: 4px;
       border-left-width: 5px;
       border-left-color:#555;
-      font-size: 1rem;
       color: #3D405B;
       width: 250px;
     }
@@ -142,27 +142,71 @@ form {
     input[type=submit] {
       border: none;
       text-align: center;
-      background-color: #3D405B;
-      color: white;
-      border-radius: 1rem;
-      padding: .75rem 1.5rem;
-      margin: 2rem 0;
-      font-size: 1.2rem;
-      -webkit-appearance: none;
-      appearance: none;
+      background-color: #bed;
+      color: black;
+      border-radius: 16px;
+      padding: 12px 24px;
+      margin: 32px 0;
+      font-size: larger;
     }
-  }
-  input:-webkit-autofill{
-    -webkit-text-fill-color: #3D405B;
-  }
-  
-  #results {
-    background-color: #F4F1DE;
-    padding: 0 1rem;
-    border: 1px solid #E07A5F;
-    border-radius: 6px;
-  }
 
+    input[type=radio]:hover,
+    input[type=submit]:hover {
+        cursor: pointer;
+    }
+}
+
+#membership-div {
+    width: 550px;
+    margin: auto;
+    margin-bottom: 60px;
+}
+
+#membership-div h2 {
+    margin: 20px;
+}
+
+#member-cards div {
+    background-color: #bed;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid lightgray;
+    border-radius: 5px 20px;
+    text-align: center;
+}
+
+.learn-more {
+    padding: 11px;
+    margin-top: 10px;
+}
+
+.learn-more:hover {
+    cursor: pointer;
+}
+
+#dialog {
+    margin: auto auto;
+    background-color: #d6d6ff;
+}
+
+#dialog div {
+    display: grid;
+    grid-template-columns: 1fr 50px;
+    margin-bottom: 10px;
+}
+
+#dialog div button {
+    padding: 9px;
+    font-size: larger;
+}
+
+#dialog div button:hover {
+    cursor: pointer;
+}
+
+#dialog p {
+    padding: 5px;
+}
 
 /* Footer vvv */
 footer {

@@ -36,6 +36,7 @@ function displayMemberCards(membershipLevels) {
         title.textContent = `${member.level} Membership Level`;
         button.textContent = `Learn More`;
         button.addEventListener("click", () => showStuff(member));
+        button.setAttribute("class", "learn-more");
 
         card.appendChild(title);
         card.appendChild(button);
