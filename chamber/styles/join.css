@@ -102,9 +102,14 @@ main {
     box-sizing: border-box;
 }
 
+#membership-form {
+    margin: 0 auto;
+    max-width: 345px;
+}
+
 #membership-form h2 {
     margin: 20px;
-    text-align: left;
+    text-align: center;
 }
 
 form {
@@ -132,7 +137,7 @@ form {
       border-left-width: 5px;
       border-left-color:#555;
       color: #3D405B;
-      width: 250px;
+      width: 100%;
     }
   
     input:required {border-left-color: #d70000;}
@@ -157,13 +162,14 @@ form {
 }
 
 #membership-div {
-    width: 550px;
+    width: 100%;
     margin: auto;
     margin-bottom: 60px;
 }
 
 #membership-div h2 {
     margin: 20px;
+    text-align: center;
 }
 
 #member-cards div {
