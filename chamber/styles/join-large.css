@@ -46,41 +46,6 @@
 
     /* Main vvv */
 
-    main {
-        width: 95%;
-        margin: 0 auto;
-    }
-
-    #join-button:hover {
-        transform: scale(1.1);
-    }
-
-    #home-section {
-        display: grid;
-        grid-template-columns: 2fr 1fr 1fr;
-        grid-gap: 10px;
-    }
-
-    #home-title {
-        margin: 16px 0px;
-    }
-    
-    #home-section {
-        margin: 15px 0px;
-    }
-
-    #forecast-text {
-        padding-top: 60px;
-    }
-
-    #business-cards {
-        margin: 15px;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 10px;
-        text-align: center;
-    }
-
     /* Footer vvv */
     footer {
         display: flex;

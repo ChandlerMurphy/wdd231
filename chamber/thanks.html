@@ -6,7 +6,7 @@
     <link href="styles/normalize.css" rel="stylesheet">
     <link rel="preload" href="styles/join.css" as="style" onload="this.rel='stylesheet'">
     <link href="styles/join-large.css" rel="stylesheet">
-    <script src="scripts/join.js" type="module" defer></script>
+    <script src="scripts/join.js" defer></script>
     <title>Chandler Murphy Chamber of Commerce</title>
     <meta name="description" content="Chandler Murphy WDD 231 - Web Frontend Development 1 Join Page. This is the page has a form for you to join the Chamber of Commerce and with different membership levels.">
     <meta name="author" content="Chandler Murphy">
@@ -39,39 +39,7 @@
         </nav>
     </header>
     <main>
-        <div id="membership-form">
-            <h2>Membership Application Form</h2>
-            <form method="GET" action="thanks.html" class="designOne">
-                <label>First Name <input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
-                <label>Last Name <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
-                <label>Title <input type="text" name="organization-title" autocomplete="organization-title" title="Your Title given within your Organization" minlength="7" pattern="^[A-Za-z\s-]{7,}$"></label>
-                <label>Email <input type="email" name="email" required placeholder="smith42@gmail.com"  title="Your Email" autocomplete="email"></label>
-                <label>Cell Phone <input type="tel" name="phone" required autocomplete="tel" title="A Phone Number with dashes" placeholder="987-555-1234"></label>
-                <label>Organization <input type="text" name="organization-place" required title="Your Organization Name" autocomplete="organization"></label>
-                
-                <h3>Select Membership Level</h3>
-                <label><input type="radio" name="membership" value="np" checked> Non Profit</label>
-                <label><input type="radio" name="membership" value="Bronze"> Bronze</label>
-                <label><input type="radio" name="membership" value="Silver"> Silver</label>
-                <label><input type="radio" name="membership" value="Gold"> Gold</label>
-    
-                <label>Organization Description<input type="text" name="organization-desc" title="A short description of your Organization"></label>
-                <label><input type="hidden" id="timestamp" name="timestamp" value=""></label>
-                <label><input type="submit" value="Apply for Membership"></label>
-            </form>
-        </div>
-        <div>
-            <h2>Membership Levels</h2>
-            <div id="member-cards"></div>
-        </div>
-        <dialog id="dialog">
-            <div>
-              <h2></h2>
-              <button>X</button>
-            </div>
-            <p id="price"></p>
-            <p id="perks"></p>
-        </dialog>
+
     </main>
     <footer>
         <div id="right-footer">
