@@ -179,6 +179,8 @@ form {
     border: 2px solid lightgray;
     border-radius: 5px 20px;
     text-align: center;
+    animation-duration: 2s;
+    animation-name: slidein;
 }
 
 .learn-more {
@@ -188,6 +190,18 @@ form {
 
 .learn-more:hover {
     cursor: pointer;
+}
+
+@keyframes slidein {
+    from {
+        translate: 150vw 0;
+        scale: 200% 1;
+    }
+
+    to {
+        translate: 0 0;
+        scale: 100% 1;
+    }
 }
 
 #dialog {
