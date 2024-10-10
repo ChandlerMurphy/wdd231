@@ -228,6 +228,10 @@ form {
     padding: 5px;
 }
 
+textarea {
+    display: none;
+}
+
 /* Footer vvv */
 footer {
     background-color: #d6d6ff;
