@@ -24,5 +24,3 @@ showInfo.innerHTML = `
 <p>Membership: ${show("membership")}</p>
 <p>Date: ${show('timestamp')}<p>
 `
-
-// First Name, Last Name, Email, Phone, organization, membership, timestamp

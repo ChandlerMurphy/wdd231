@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header vvv */
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #d6d6ff;
+    color: black;
+}
+
+#nav-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-content: center;
+}
+
+#nav-left {
+    display: flex;
+    padding: 10px;
+}
+
+#city-img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+h1 {
+    margin: 0;
+}
+
+#hamburger {
+    border: none;
+    background: none;
+    font-size: xx-large;
+    padding: 10px;
+}
+
+#hamburger:hover {
+    cursor: pointer;
+}
+
+#hamburger::before {
+    content: "☰";
+}
+
+#hamburger.open-ham::before {
+    content: "X";
+}
+
+ul {
+    display: none;
+    list-style: none;
+}
+
+ul a {
+    color: black;
+    text-decoration: none;
+}
+
+.open-nav {
+    padding: 0px;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.open-nav li {
+    display: block;
+}
+
+.open-nav a {
+    display: block;
+    padding: 15px;
+    border-bottom: 2px solid black;
+}
+
+.open-nav > :first-child {
+    border-top: 2px solid black;
+}
+
+.active {
+    color: #790279;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+/* Footer vvv */
+footer {
+    background-color: #d6d6ff;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#social-footer {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+#social-footer a img {
+    width: 60px;
+    height: 60px;
+}
+
+#social-footer a {
+    display: block
+}
+
+@media screen and (min-width: 860px) {
+    /* Header vvv */
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        width: 50%;
+    }
+
+    .open-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 50%;
+    }
+
+    .open-nav li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .open-nav a {
+        display: block;
+        padding: 15px;
+        border-bottom: none;
+    }
+    
+    .open-nav > :first-child {
+        border-top: none;
+    }
+
+    #hamburger {
+        display: none;
+    }
+
+    /* Footer vvv */
+    footer {
+        display: flex;
+        justify-content: space-between;
+    }
+}
