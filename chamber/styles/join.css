@@ -128,7 +128,8 @@ form {
     input[type=text],
     input[type=tel],
     input[type=date],
-    input[type=email] {
+    input[type=email],
+    input[type=text-area] {
       display: block;
       margin: 2px 0 16px 0 ;
       padding: 12px;
