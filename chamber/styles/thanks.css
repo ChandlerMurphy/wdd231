@@ -1,0 +1,23 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+main h2 {
+    margin: 30px;
+}
+
+#results {
+    padding: 20px;
+    background-color: #bed;
+    margin: 0 20px 30px 20px;
+    border: 2px solid lightgray;
+    border-radius: 5px 20px;
+}
+
+#results p {
+    padding: 10px;
+}
