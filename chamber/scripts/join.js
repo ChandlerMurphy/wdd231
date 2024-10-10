@@ -38,3 +38,13 @@ dialogButton.addEventListener("click", () => {
 });
 
 displayMemberCards(membershipLevels);
+
+// Set Timestamp
+function setTimestamp() {
+    const now = new Date();
+    const timestamp = now.toDateString();
+    // Set the value of the hidden input
+    document.getElementById('timestamp').value = timestamp;
+}
+
+setTimestamp();
