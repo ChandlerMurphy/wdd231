@@ -6,7 +6,8 @@
     <link href="styles/normalize.css" rel="stylesheet">
     <link rel="preload" href="styles/join.css" as="style" onload="this.rel='stylesheet'">
     <link href="styles/join-large.css" rel="stylesheet">
-    <script src="scripts/join.js" type="module" defer></script>
+    <script src="scripts/constants.js" defer></script>
+    <script src="scripts/join.js" type="module"></script>
     <title>Chandler Murphy Chamber of Commerce</title>
     <meta name="description" content="Chandler Murphy WDD 231 - Web Frontend Development 1 Join Page. This is the page has a form for you to join the Chamber of Commerce and with different membership levels.">
     <meta name="author" content="Chandler Murphy">
@@ -57,7 +58,7 @@
                 <label><input type="radio" name="membership" value="Gold"> Gold</label>
                 
                 <!-- This will be edited in JS later on as a Hidden Timestamp -->
-                <label><input type="hidden" id="timestamp" name="timestamp" value=""></label>
+                <input type="hidden" name="timestamp" value="">
                 
                 <label><input type="submit" value="Apply for Membership"></label>
             </form>
