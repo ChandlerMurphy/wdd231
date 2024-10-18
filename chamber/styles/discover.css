@@ -1,4 +1,23 @@
 /* Normal Code */
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+#side-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#side-bar div {
+    margin: 10px auto;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    width: 80%;
+}
 
 /* Larger Screen */
 @media screen and (min-width: 860px) {
