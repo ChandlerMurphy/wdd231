@@ -20,6 +20,11 @@ main {
     background-color: #bed;
 }
 
+#mayor-img {
+    width: 150px;
+    height: 188px;
+}
+
 #main-content {
     display: flex;
     flex-direction: column;
@@ -50,7 +55,7 @@ main {
 
     #main-content img {
         width: 600px;
-        height: auto;
+        min-height: 341px;
         margin: 20px auto;
         border: 2px solid black;
         border-radius: 5px;
