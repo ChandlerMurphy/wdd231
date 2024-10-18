@@ -60,4 +60,9 @@ main {
         border: 2px solid black;
         border-radius: 5px;
     }
+
+    #main-content img:hover {
+        transform: scale(104%);
+        transition: 0.5s;
+    }
 }
