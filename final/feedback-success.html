@@ -39,44 +39,10 @@
         </nav>
     </header>
     <main>
-        <form method="get" action="feedback-success.html" id="feedback-form">
-
-            <h2>Let's Hear Some Feedback on the Website</h2>
-            <p>
-                If you want to tell us about some of your favorite features on the website so far then fill out this form.
-                If you want to instead tell us what we can do to increase the performance of the site or suggest some more tips and tools then this form is for you as well.
-                Our priority is your priority so tell us what we are doing well and what we can improve you meet your needs in the game. 
-            </p>
-
-            <fieldset>
-
-                <label id="dateLabel">Date of Website Review <input type="date" name="reviewDate" id="reviewDate" required></label>
-
-                <div id="rating">Overall Website Rating</div>
-                <div id="radioButtons">
-                    <label><input type="radio" name="starRating" value="oneStar" class="ratingButton" required>☆</label>
-                    <label><input type="radio" name="starRating" value="twoStar" class="ratingButton" required>☆☆</label>
-                    <label><input type="radio" name="starRating" value="threeStar" class="ratingButton" required>☆☆☆</label>
-                    <label><input type="radio" name="starRating" value="fourStar" class="ratingButton" required>☆☆☆☆</label>
-                    <label><input type="radio" name="starRating" value="fiveStar" class="ratingButton" required>☆☆☆☆☆</label> 
-                </div>
-
-                <label id="favFeatureLabel">Favorite Website Feature <span>(Optional)</span>
-                    <select name="favFeature" id="favFeature">
-                        <option value="" disabled selected>Select a Product</option>
-                    </select>
-                </label>
-
-                <label id="reviewLabel"><span>Written Review <span>(Optional)</span></span><textarea class="writtenReview" name="writtenReview" rows="6"></textarea></label>
-
-                <label id="suggestionLabel"><span>Suggestions for this website <span class="blue"></span></span><textarea class="writtenReview" name="writtenReview" rows="6" required></textarea></label>
-
-                <label id="nameLabel">Your Name <span>(Optional)</span><input type="text" id="name" name="userName"></label>
-
-                <input id="giveSuggestion" type="submit" value="Send Website Suggestion">
-
-            </fieldset>
-        </form>
+        <h2>Website Feedback Submitted and Received!</h2>
+        <p><span>Number of Website Reviews given: </span><span id="posts"></span></p>
+        <h3>Thank you for providing feedback for the website. We will review your feedback and take any further actions to keep you happy with our site.</h3>
+        <p>Please return to other parts of the site if you would like to continue browsing.</p>
     </main>
     <footer>
         <div id="right-footer">
