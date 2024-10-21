@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link rel="preload" href="styles/discover.css" as="style" onload="this.rel='stylesheet'">
+    <link href="styles/constants.css" rel="stylesheet">
+    <script src="scripts/constants.js" defer></script>
+    <script src="scripts/discover.js"></script>
+    <title>Chandler Murphy Chamber of Commerce</title>
+    <meta name="description" content="Chandler Murphy WDD 231 - Web Frontend Development 1 Join Page. This is the page has a form for you to join the Chamber of Commerce and with different membership levels.">
+    <meta name="author" content="Chandler Murphy">
+    <meta property="og:title" content="Chandler Murphy WDD 231 - Web Frontend Development 1 Chamber Join Page." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://chandlermurphy.github.io/wdd231/chamber/join.html" />
+    <meta property="og:image" content="https://churchofjesuschristtemples.org/assets/img/temples/ephraim-utah-temple/ephraim-utah-temple-25337-main.jpg" />
+    <meta property="og:description" content="This is the join membership page for my Chamber of Commerce site. It holds all information related to joining and signing up with the Chamber of Commerce." />
+    <link rel="icon" href="/favicon.ico">
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="nav-header">
+                <div id="nav-left">
+                    <img id="city-img" src="images/ehpraim-city.jpg" alt="Ephraim City Image" loading="eager">
+                    <div id="nav-header-text">
+                        <h1>Ephraim City</h1>
+                        <p>Chamber of Commerce</p>
+                    </div>
+                </div>
+                <button id="hamburger" title="menu-button"></button>
+            </div>
+            <ul>
+                <li><a href="index.html" title="Home" id="home-nav-link">Home</a></li>
+                <li><a href="directory.html" title="Directory">Directory</a></li>
+                <li><a href="join.html" title="Join" >Join</a></li>
+                <li><a href="discover.html.html" title="Discover" class="active">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="side-bar">
+            <div id="visit-msg"></div>
+            <div id="demo">
+                <h2>Demographics</h2>
+                <p>Population: 6,291</p>
+                <p>Median Age: 21.8</p>
+                <p>Median Income: $70,677</p>
+            </div>
+            <div id="mayor">
+                <h2>Meet Mayor John Scott</h2>
+                <img src="images/mayor.webp" alt="Ephraim City Mayor John Scott" id="mayor-img">
+                <p>In the last 11 years, Scott has served as a Republican State Central Committee member, bishop for over six years, three times as a Sanpete County State Republican delegate representing Ephraim City District 1, and is now serving as a Sanpete County Republican delegate from Ephraim. He also served as the Sanpete County Bee Inspector.</p>
+            </div>
+            <div id="event">
+                <h2>Town Hall Chili Cookout</h2>
+                <p>Sunday December 7th 2024 @4pm</p>
+            </div>
+        </div>
+        <div id="main-content">
+            <img src="images/ephraim-1.webp" alt="Ephraim City Cafe" loading="lazy">
+            <img src="images/ephraim-2.jpg" alt="Ephraim City Farm" loading="lazy">
+            <img src="images/ephraim-3.webp" alt="Ephraim City Hills" loading="lazy">
+            <img src="images/ephraim-4.webp" alt="Ephraim City Hall" loading="lazy">
+            <img src="images/ephraim-5.webp" alt="Ephraim City Sign" loading="lazy">
+            <img src="images/ephraim-6.jpg" alt="Manti Temple" loading="lazy">
+        </div>
+    </main>
+    <footer>
+        <div id="right-footer">
+            <h3>Ephraim City Chamber of Commerce</h3>
+            <p>PO BOX 553 EPHRAIM, UT 84627</p>
+            <p>info@sanpetechamberofcommerce.org</p>
+            <p>(435) 283-4631</p>
+        </div>
+        <div id="social-footer">
+            <a href="https://www.facebook.com/sanpetechamberofcommerce" title="Ephraim Facebook Chamber of Commerce Link">
+                <img src="images/fb-icon.png" alt="Facebook Logo">
+            </a>
+            <a href="https://www.instagram.com/sanpetechamber/" title="Ephraim Instagram Chamber of Commerce Link">
+                <img src="images/instagram-icon.png" alt="Instagram Logo">
+            </a>
+            <a href="https://www.linkedin.com/company/squarespace/" title="Ephraim Indeed Chamber of Commerce Link">
+                <img src="images/indeed-icon.png" alt="Indeed Logo">
+            </a>
+        </div>
+        <div id="left-footer">
+            <p>WDD 231 Class Project</p>
+            <p>Chandler Murphy</p>
+            <p>© <span id="currentyear"></span> Ephraim City Chamber of Commerce</p>
+            <p class="last-updated">Last Modification: <span id="lastUpdated"></span></p>
+        </div>
+    </footer>
+</body>
+</html>
