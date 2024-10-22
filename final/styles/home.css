@@ -1,7 +1,3 @@
-main {
-    background-color: #f8f4e8;
-}
-
 /* Hero Banner vvv */
 #hero {
     text-align: center;
@@ -29,6 +25,10 @@ main {
     padding: 10px; 
     max-width: 500px;
     margin: 0 auto;
+}
+
+#hero-left h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 #hero-left h2, #hero-left p, #hero-left a {
@@ -67,6 +67,7 @@ main {
 
 #dice-text p {
     padding: 10px;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 #dice-text a {
@@ -78,6 +79,7 @@ main {
     border-radius: 5px;
     color: black;
     text-decoration: none;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 /* Feedback Card vvv */
@@ -113,10 +115,12 @@ main {
     border-radius: 5px;
     color: black;
     text-decoration: none;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 #feedback-text p {
     padding: 10px;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 
@@ -145,7 +149,7 @@ main {
     #hero-left {
         position: static; 
         background-color: #545454; 
-        max-width: 550px;
+        max-width: 580px;
         max-height: fit-content;
         align-self: center;
         margin: 0 auto;
