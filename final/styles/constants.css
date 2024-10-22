@@ -80,9 +80,9 @@ ul a {
 }
 
 .active {
-    color: orange;
-    text-decoration: underline;
-    text-underline-offset: 2px;
+    color: white;
+    text-decoration: 2px underline;
+    text-underline-offset: 3px;
 }
 
 /* Footer vvv */

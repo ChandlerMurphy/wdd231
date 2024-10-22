@@ -28,7 +28,6 @@ main {
     border-radius: 5px;
     padding: 10px; 
     max-width: 500px;
-    height: 230px;
     margin: 0 auto;
 }
 
@@ -37,12 +36,14 @@ main {
 }
 
 #hero-left a {
+    display: inline-block;
     color: white;
-    margin: 20px;
+    margin: 10px;
     padding: 10px;
     background-color: white;
     border-radius: 5px;
     color: black;
+    text-decoration: none;
 }
 
 /* Dice Card vvv */
@@ -52,24 +53,124 @@ main {
 
 #dice-text {
     color: white; 
-    background-color: rgba(0, 0, 0, 0.5); 
+    background-color: #545454; 
     border-radius: 5px;
     padding: 10px; 
     width: 85%;
     max-width: 500px;
     margin: 0 auto;
-    height: 120px;
+    margin-bottom: 20px;
+}
+
+#dice-text p {
+    padding: 10px;
 }
 
 #dice-text a {
+    display: inline-block;
     color: white;
-    margin: 20px 20px;
+    margin: 10px;
     padding: 10px;
     background-color: white;
     border-radius: 5px;
     color: black;
+    text-decoration: none;
 }
 
-#dice-text p {
-    padding-bottom: 30px;
+/* Feedback Card vvv */
+#feedback {
+    text-align: center;
+}
+
+#feedback-text {
+    color: white; 
+    background-color: #545454; 
+    border-radius: 5px;
+    padding: 10px; 
+    width: 85%;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+#feedback-text a {
+    display: inline-block;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    color: black;
+    text-decoration: none;
+}
+
+#feedback-text p {
+    padding: 10px;
+}
+
+
+@media screen and (min-width: 860px) {
+    /* Hero Banner vvv */
+    #hero {
+        position: static; 
+        display: flex;
+    }
+    
+    
+    #hero-right {
+        position: static;
+        width: 100%;
+    }
+
+    #hero-right img {
+        margin: 0 auto;
+    }
+    
+    #hero-left {
+        position: static; 
+        background-color: #545454; 
+        max-width: 550px;
+        max-height: fit-content;
+        align-self: center;
+        margin: 30px;
+    }
+    
+    /* Dice Card vvv */
+    #dice {
+        display: flex;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    #dice img {
+        margin-right: 20px;
+    }
+    
+    #dice-text {
+        width: 85%;
+        max-width: 500px;
+        margin: 30px;
+        height: fit-content;
+        align-self: center;
+    }
+
+    /* Feedback Card vvv */
+    #feedback {
+        display: flex;
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    #feedback-text {
+        width: 85%;
+        max-width: 500px;
+        margin: 30px;
+        height: fit-content;
+        align-self: center;
+    }
+    
+    #feedback img {
+        margin-left: 20px;
+    }
+    
 }
