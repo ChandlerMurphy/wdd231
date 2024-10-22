@@ -49,6 +49,9 @@ main {
 /* Dice Card vvv */
 #dice {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #dice-text {
@@ -80,6 +83,9 @@ main {
 /* Feedback Card vvv */
 #feedback {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #feedback-text {
@@ -90,7 +96,12 @@ main {
     width: 85%;
     max-width: 500px;
     margin: 0 auto;
-    margin-top: 20px;
+    margin-bottom: 60px;
+    order: 2;
+}
+
+#feedback img {
+    order: 1;
 }
 
 #feedback-text a {
@@ -112,18 +123,23 @@ main {
 @media screen and (min-width: 860px) {
     /* Hero Banner vvv */
     #hero {
-        position: static; 
+        position: static;
         display: flex;
+        width: 95%;
+        margin: 0 auto;
     }
     
     
     #hero-right {
         position: static;
         width: 100%;
+        margin: 0 auto;
+        max-width: 500px;
     }
 
     #hero-right img {
         margin: 0 auto;
+        overflow: visible;
     }
     
     #hero-left {
@@ -132,13 +148,14 @@ main {
         max-width: 550px;
         max-height: fit-content;
         align-self: center;
-        margin: 30px;
+        margin: 0 auto;
     }
     
     /* Dice Card vvv */
     #dice {
         display: flex;
-        width: 80%;
+        flex-direction: row;
+        width: 70%;
         margin: 0 auto;
     }
 
@@ -149,7 +166,7 @@ main {
     #dice-text {
         width: 85%;
         max-width: 500px;
-        margin: 30px;
+        margin: 0 auto;
         height: fit-content;
         align-self: center;
     }
@@ -157,14 +174,20 @@ main {
     /* Feedback Card vvv */
     #feedback {
         display: flex;
-        width: 80%;
+        flex-direction: row;
+        width: 70%;
         margin: 0 auto;
+        order: 1;
+    }
+
+    #feedback img {
+        order: 2;
     }
     
     #feedback-text {
         width: 85%;
         max-width: 500px;
-        margin: 30px;
+        margin: 0 auto;
         height: fit-content;
         align-self: center;
     }
