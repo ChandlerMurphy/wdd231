@@ -8,8 +8,8 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #d6d6ff;
-    color: black;
+    background-color: #065e7f;
+    color: white;
 }
 
 #nav-header {
@@ -24,12 +24,6 @@ nav {
     padding: 10px;
 }
 
-#city-img {
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
-}
-
 h1 {
     margin: 0;
 }
@@ -39,6 +33,7 @@ h1 {
     background: none;
     font-size: xx-large;
     padding: 10px;
+    color: white;
 }
 
 #hamburger:hover {
@@ -59,7 +54,7 @@ ul {
 }
 
 ul a {
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
@@ -77,30 +72,35 @@ ul a {
 .open-nav a {
     display: block;
     padding: 15px;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid white;
 }
 
 .open-nav > :first-child {
-    border-top: 2px solid black;
+    border-top: 2px solid white;
 }
 
 .active {
-    color: #790279;
+    color: orange;
     text-decoration: underline;
     text-underline-offset: 2px;
 }
 
 /* Footer vvv */
 footer {
-    background-color: #d6d6ff;
+    background-color: #065e7f;
     padding: 10px;
     font-family: Arial, Helvetica, sans-serif;
+    color: white;
 }
 
 #social-footer {
     display: flex;
     justify-content: center;
     padding: 5px;
+    background-color: #f8f4e8;
+    border-radius: 5px;
+    width: 150px;
+    margin: 20px auto;
 }
 
 #social-footer a img {
@@ -162,5 +162,9 @@ footer {
     footer {
         display: flex;
         justify-content: space-between;
+    }
+
+    #social-footer {
+        margin: 0 auto;
     }
 }
