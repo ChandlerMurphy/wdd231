@@ -1,0 +1,145 @@
+
+#form-heading {
+    margin: 32px auto;
+    text-align: center;
+    background-color: #545454;
+    padding: 20px;
+    color: white;
+    border-radius: 5px;
+    width: fit-content;
+    width: 60%;
+}
+
+#form-heading p {
+    margin: 10px;
+    text-align: center;
+    justify-self: center;
+    width: 80%;
+}
+
+#form-heading h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#feedback-form fieldset {
+    max-width: 500px;
+    margin: 20px;
+    justify-self: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 16px;
+    background-color: #EFEFEF;
+}
+
+#feedback-form label {
+    display: block;
+}
+
+#feedback-form select {
+    background-color: white;
+    display: block;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: 17px;
+    color: #555;
+    width: 100%;
+    appearance: none;
+    margin: .5rem 0;
+}
+
+#rating {
+    margin-top: 40px;
+}
+
+#radioButtons {
+    display: flex;
+    margin: .2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ratingButton {
+    margin: 4px 0;
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+}
+
+#dateLabel {
+    margin-top: 4px;
+    max-width: 90%;
+}
+
+#reviewDate {
+    display: block;
+    background-color: white;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: 17px;
+    color: #555;
+    width: 100%;
+    appearance: none;
+    margin: 8px 0;
+}
+
+#favFeatureLabel {
+    margin-top: 40px;
+}
+
+#reviewLabel {
+    margin-top: 32px;
+    margin-bottom: 4px;
+}
+
+#suggestionLabel {
+    margin-top: 32px;
+    margin-bottom: 4px;
+}
+
+.writtenReview {
+    width: 100%;
+    border: solid 1px #999;
+    border-radius: 6px;
+    margin-top: .5rem;
+}
+
+#nameLabel {
+    margin-top: 40px;
+}
+
+#name {
+    display: block;
+    background-color: white;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: 17px;
+    color: #555;
+    width: 90%;
+    appearance: none;
+    margin: 4px 0;
+}
+
+#giveSuggestion {
+    width: 100%;
+    margin-top: 32px;
+    padding: 18px;
+    border: solid 1px #999;
+    background-color: #065e7f;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    border-radius: 6px;
+    font-size: large;
+    font-weight: bold;
+    appearance: none;
+}
+
+.blue {
+    color: #0707a2;
+    font-size: smaller;
+}
+
+form {
+    margin-bottom: 32px;
+}

@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles/normalize.css" rel="stylesheet">
-    <link rel="preload" href="styles/home.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="styles/feedback.css" as="style" onload="this.rel='stylesheet'">
     <link href="styles/constants.css" rel="stylesheet">
     <script src="scripts/constants.js" defer></script>
-    <script src="scripts/home.js"></script>
+    <script src="scripts/feedback.js"></script>
     <title>Chandler Murphy Tips for D&D Beginners</title>
     <meta name="description" content="Chandler Murphy WDD 231 - Web Frontend Development 1 Final Project Home Page. This is the home page for my Final Project site that has tips and tips for D&D beginners.">
     <meta name="author" content="Chandler Murphy">
@@ -40,14 +40,14 @@
     </header>
     <main>
         <form method="get" action="feedback-success.html" id="feedback-form">
-
-            <h2>Let's Hear Some Feedback on the Website</h2>
-            <p>
-                If you want to tell us about some of your favorite features on the website so far then fill out this form.
-                If you want to instead tell us what we can do to increase the performance of the site or suggest some more tips and tools then this form is for you as well.
-                Our priority is your priority so tell us what we are doing well and what we can improve you meet your needs in the game. 
-            </p>
-
+            <div id="form-heading">
+                <h2>Let's Hear Some Feedback on the Website</h2>
+                <p>
+                    If you want to tell us about some of your favorite features on the website so far then fill out this form.
+                    If you want to instead tell us what we can do to increase the performance of the site or suggest some more tips and tools then this form is for you as well.
+                    Our priority is your priority so tell us what we are doing well and what we can improve you meet your needs in the game. 
+                </p>
+            </div>
             <fieldset>
 
                 <label id="dateLabel">Date of Website Review <input type="date" name="reviewDate" id="reviewDate" required></label>
@@ -61,17 +61,17 @@
                     <label><input type="radio" name="starRating" value="fiveStar" class="ratingButton" required>☆☆☆☆☆</label> 
                 </div>
 
-                <label id="favFeatureLabel">Favorite Website Feature <span>(Optional)</span>
+                <label id="favFeatureLabel">Favorite Website Feature <span class="blue">(Optional)</span>
                     <select name="favFeature" id="favFeature">
                         <option value="" disabled selected>Select a Product</option>
                     </select>
                 </label>
 
-                <label id="reviewLabel"><span>Written Review <span>(Optional)</span></span><textarea class="writtenReview" name="writtenReview" rows="6"></textarea></label>
+                <label id="reviewLabel"><span>Written Review <span class="blue">(Optional)</span></span><textarea class="writtenReview" name="writtenReview" rows="6"></textarea></label>
 
-                <label id="suggestionLabel"><span>Suggestions for this website <span class="blue"></span></span><textarea class="writtenReview" name="writtenReview" rows="6" required></textarea></label>
+                <label id="suggestionLabel"><span>Suggestions for this website</span><textarea class="writtenReview" name="writtenReview" rows="6" required></textarea></label>
 
-                <label id="nameLabel">Your Name <span>(Optional)</span><input type="text" id="name" name="userName"></label>
+                <label id="nameLabel">Your Name <span class="blue">(Optional)</span><input type="text" id="name" name="userName"></label>
 
                 <input id="giveSuggestion" type="submit" value="Send Website Suggestion">
 

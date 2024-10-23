@@ -77,7 +77,9 @@
         border-radius: 5px;
         padding: 10px;
     }
+}
 
+@media screen and (min-width: 699px) {
     #d4 {
         border-top: none;
     }
