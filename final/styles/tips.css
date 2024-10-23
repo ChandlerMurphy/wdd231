@@ -1,0 +1,353 @@
+/* Intro Heading Box vvv */
+#intro {
+    margin: 32px auto;
+    text-align: center;
+    background-color: #545454;
+    padding: 20px;
+    color: white;
+    border-radius: 5px;
+    width: fit-content;
+    width: 60%;
+}
+
+#intro p {
+    margin: 20px 10px 10px;
+    text-align: center;
+    justify-self: center;
+    width: 80%;
+}
+
+#intro h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* What section vvv */
+#what {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 80px 0;
+}
+
+#what-text {
+    color: white; 
+    background-color: #545454; 
+    border-radius: 5px;
+    padding: 10px; 
+    width: 85%;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    order: 1;
+}
+
+#what img {
+    order: 2;
+}
+
+#what-text p {
+    padding: 10px;
+}
+
+#what-text h3 {
+    padding: 10px 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Starting section vvv */
+#starting {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 80px 0;
+}
+
+#starting-text {
+    color: white; 
+    background-color: #545454; 
+    border-radius: 5px;
+    padding: 10px; 
+    width: 85%;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    order: 1;
+}
+
+#starting-text li {
+    padding: 10px;
+}
+
+#starting-text ol {
+    padding-top: 10px;
+}
+
+#starting-text h3 {
+    padding: 10px 0;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#starting img {
+    order: 2;
+}
+
+/* Characters section vvv */
+#characters {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 80px 0;
+}
+
+#characters-text {
+    color: white; 
+    background-color: #545454; 
+    border-radius: 5px;
+    padding: 10px; 
+    width: 85%;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    order: 1;
+}
+
+#characters img {
+    order: 2;
+}
+
+#characters-text p {
+    padding: 10px;
+    text-align: center;
+}
+
+#characters-text li {
+    padding: 10px;
+}
+
+#characters-text ol {
+    padding-top: 10px;
+}
+
+#characters-text h3 {
+    padding: 10px 0;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Where section vvv */
+#where {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 80px 0;
+}
+
+#where-text {
+    color: white; 
+    background-color: #545454; 
+    border-radius: 5px;
+    padding: 10px; 
+    width: 85%;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    order: 1;
+}
+
+#where-text li {
+    padding: 10px;
+}
+
+#where-text ol {
+    padding-top: 10px;
+}
+
+#where-text h3 {
+    padding: 10px 0;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#where img {
+    order: 2;
+}
+
+#where-text p {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Tools section vvv */
+#tools {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 80px 0;
+}
+
+#tools-text {
+    color: white; 
+    background-color: #545454; 
+    border-radius: 5px;
+    padding: 10px; 
+    width: 85%;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    order: 1;
+}
+
+#tools img {
+    order: 2;
+}
+
+#tools-text p {
+    padding: 10px;
+    text-align: center;
+}
+
+#tools-text li {
+    padding: 10px;
+}
+
+#tools-text ol {
+    padding-top: 10px;
+}
+
+#tools-text h3 {
+    padding: 10px 0;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Content above footer vvv */
+main h2 {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 30px;
+}
+
+@media screen and (min-width: 860px) {
+    /* What Section vvv */
+    #what {
+        display: flex;
+        flex-direction: row;
+        width: 70%;
+        margin: 80px auto 130px;
+        order: 1;
+    }
+    
+    #what img {
+        order: 2;
+    }
+        
+    #what-text {
+        width: 85%;
+        max-width: 500px;
+        margin: 0 auto;
+        height: fit-content;
+        align-self: center;
+    }
+        
+    #what img {
+        margin-left: 50px;
+    }
+    
+    /* Starting section vvv */
+    #starting {
+        display: flex;
+        flex-direction: row;
+        width: 70%;
+        margin: 130px auto;
+        order: 2;
+    }
+
+    #starting img {
+        margin-right: 20px;
+        order: 1;
+    }
+    
+    #starting-text {
+        width: 85%;
+        max-width: 500px;
+        margin: 0 auto;
+        height: fit-content;
+        align-self: center;
+    }
+
+    /* Characters Section vvv */
+    #characters {
+        display: flex;
+        flex-direction: row;
+        width: 70%;
+        margin: 130px auto;
+        order: 1;
+    }
+    
+    #characters img {
+        order: 2;
+    }
+        
+    #characters-text {
+        width: 85%;
+        max-width: 500px;
+        margin: 0 auto;
+        height: fit-content;
+        align-self: center;
+    }
+        
+    #characters img {
+        margin-left: 50px;
+    }
+    
+    /* Where section vvv */
+    #where {
+        display: flex;
+        flex-direction: row;
+        width: 70%;
+        margin: 130px auto;
+        order: 2;
+    }
+
+    #where img {
+        margin-right: 20px;
+        order: 1;
+    }
+    
+    #where-text {
+        width: 85%;
+        max-width: 500px;
+        margin: 0 auto;
+        height: fit-content;
+        align-self: center;
+    }
+
+    /* Tools Section vvv */
+    #tools {
+        display: flex;
+        flex-direction: row;
+        width: 70%;
+        margin: 130px auto;
+        order: 1;
+    }
+    
+    #tools img {
+        order: 2;
+    }
+        
+    #tools-text {
+        width: 85%;
+        max-width: 500px;
+        margin: 0 auto;
+        height: fit-content;
+        align-self: center;
+    }
+        
+    #tools img {
+        margin-left: 50px;
+    }
+}
