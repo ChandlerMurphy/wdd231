@@ -57,6 +57,10 @@
     border-radius: 6px;
 }
 
+.dice-roller button:hover {
+    cursor: pointer;
+}
+
 .dice-roller span {
     background-color: #EFEFEF;
     border: 2px solid black;
