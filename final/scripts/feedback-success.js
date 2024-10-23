@@ -11,6 +11,12 @@ document.addEventListener("DOMContentLoaded", () => {
                 result = result.replaceAll("+", " ");
                 result = result.replaceAll("%28", "(");
                 result = result.replaceAll("%29", ")");
+                result = result.replaceAll("%21", "!");
+                result = result.replaceAll("oneStar", "☆")
+                result = result.replaceAll("twoStar", "☆☆")
+                result = result.replaceAll("threeStar", "☆☆☆")
+                result = result.replaceAll("fourStar", "☆☆☆☆")
+                result = result.replaceAll("fiveStar", "☆☆☆☆☆")
 
                 if (result === "") {
                     result = `NA`;
@@ -22,12 +28,11 @@ document.addEventListener("DOMContentLoaded", () => {
     
     const showInfo = document.querySelector("#results");
     showInfo.innerHTML = `
-    <p>Name: ${show("userName")}</p>
-    <p>Date: ${show("reviewDate")}</p>
-    <p>Phone: ${show("phone")}</p>
-    <p>Organization: ${show("organization-place")}</p>
-    <p>Membership: ${show("membership")}</p>
-    <p>Date: ${show('timestamp')}<p>
+    <p><span class="results-title">Name: </span><br><br>${show("userName")}</p>
+    <p><span class="results-title">Date: </span><br><br>${show("reviewDate")}</p>
+    <p><span class="results-title">Site Rating: </span><br><br>${show("starRating")}</p>
+    <p><span class="results-title">Referral Source: </span><br><br>${show("writtenReview")}</p>
+    <p><span class="results-title">Feedback Given: </span><br><br>${show("feedback")}</p>
     `
 })
 
