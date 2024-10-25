@@ -25,6 +25,14 @@ document.addEventListener("DOMContentLoaded", () => {
         });
         return(result)
     }
+
+    let numVisits = Number(window.localStorage.getItem("numVisits")) || 0;
+    if (numVisits !== 0) {
+        numVisits = numVisits;
+    } 
+    
+    numVisits++;
+    localStorage.setItem("numVisits", numVisits);
     
     const showInfo = document.querySelector("#results");
     showInfo.innerHTML = `
@@ -33,6 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
     <p><span class="results-title">Site Rating: </span><br><br>${show("starRating")}</p>
     <p><span class="results-title">Referral Source: </span><br><br>${show("writtenReview")}</p>
     <p><span class="results-title">Feedback Given: </span><br><br>${show("feedback")}</p>
+    <p><span class="results-title">Total Number of Feedback Forms Submitted: </span><br><br>${numVisits}</p>
     `
 })
 
