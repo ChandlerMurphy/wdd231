@@ -224,6 +224,41 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+/* Monster Cards */
+#monsters-title {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto 40px;
+}
+
+#monsters {
+    display: flex;
+    flex-direction: column;
+}
+
+#monsters div {
+    margin: 30px auto;
+    padding: 10px;
+    max-width: 300px;
+    text-align: center;
+    background-color: #545454;
+    border-radius: 5px;
+    color: white;
+}
+
+#monsters div h3 {
+    padding: 10px;
+}
+
+#monsters div button {
+    padding: 12px;
+    border-radius: 5px;
+}
+
+#monsters div button:hover {
+    cursor: pointer;
+}
+
 /* Content above footer vvv */
 main h2 {
     text-align: center;
