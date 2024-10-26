@@ -238,7 +238,7 @@
 
 #monsters div {
     margin: 30px auto;
-    padding: 10px;
+    padding: 30px;
     max-width: 300px;
     text-align: center;
     background-color: #545454;
@@ -248,6 +248,7 @@
 
 #monsters div h3 {
     padding: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 #monsters div button {
@@ -257,6 +258,38 @@
 
 #monsters div button:hover {
     cursor: pointer;
+}
+
+#modal {
+    margin: auto auto;
+    background-color: #065e7f;
+    color: white;
+    padding: 30px;
+}
+
+#modal div {
+    display: grid;
+    grid-template-columns: 1fr 50px;
+    margin-bottom: 10px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+#modal div button {
+    padding: 9px;
+    font-size: larger;
+    height: 44px;
+    align-self: center;
+}
+
+#modal div button:hover {
+    cursor: pointer;
+}
+
+#modal p {
+    padding: 5px;
 }
 
 /* Content above footer vvv */
@@ -384,5 +417,13 @@ main h2 {
         
     #tools img {
         margin-left: 50px;
+    }
+
+    /* Monster Cards */
+    #monsters {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 20px;
     }
 }

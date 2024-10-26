@@ -73,17 +73,17 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function showStuff(monster) {
-        dialogTitle.innerHTML = `Monster Name: ${monster.name}`;
+        dialogTitle.innerHTML = `${monster.name}`;
         dialogText.innerHTML = `
-        <p>Alignment: ${monster.alignment}</p>
-        <p>Size: ${monster.size}</p>
-        <p>HP: ${monster.hit_points}</p>
-        <p>Strength: ${monster.strength}</p>
-        <p>Dexterity: ${monster.dexterity}</p>
-        <p>Constitution: ${monster.constitution}</p>
-        <p>Intelligence: ${monster.intelligence}</p>
-        <p>Wisdom: ${monster.wisdom}</p>
-        <p>Charisma: ${monster.charisma}</p>
+        <p><span class="bold">Alignment: </span>${monster.alignment}</p>
+        <p><span class="bold">Size: </span>${monster.size}</p>
+        <p><span class="bold">Health Points: </span>${monster.hit_points}</p>
+        <p><span class="bold">Strength: </span>${monster.strength}</p>
+        <p><span class="bold">Dexterity: </span>${monster.dexterity}</p>
+        <p><span class="bold">Constitution: </span>${monster.constitution}</p>
+        <p><span class="bold">Intelligence: </span>${monster.intelligence}</p>
+        <p><span class="bold">Wisdom: </span>${monster.wisdom}</p>
+        <p><span class="bold">Charisma: </span>${monster.charisma}</p>
         `;
         dialogBox.showModal();
     }
